@@ -152,3 +152,39 @@ button.slick-next
 {
   width: 100%!important;
 }
+
+.slick-dots li button
+{
+  font-size: 0px;
+  border: 5px solid #ffffff;
+  width: 25px;
+  height: 25px;
+  background: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slick-dots
+{
+  margin: 0 auto;
+  width: 50%;
+  position: absolute;
+  left: 46%;
+  top: 90%;
+}
+
+.slick-dots li
+{
+  padding-left: 10px;
+  display: inline-block;
+}
+
+li.slick-active button
+{
+  background: #ad5e65;
+}
+
+.slick-initialized
+{
+  overflow: hidden;
+}
