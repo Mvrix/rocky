@@ -1,9 +1,16 @@
+@font-face {
+  font-family: 'fonte';
+  src: url('./font/BalooBhaina2-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 body
 {
   display: block;
   margin: auto;
   width: 100%;
   height: 100%;
+  font-family: 'fonte', Arial, sans-serif;
 }
 
 ul {
@@ -49,7 +56,7 @@ main, .conteudo
 
 .header-2
 {
-  background-color: #ffffff;
+  background-color: transparent;
   width: 980px;
   margin: 0 auto;
   padding: 10px;
@@ -116,7 +123,7 @@ main, .conteudo
 .coluna-100
 {
   width: 100%;
-  float:left;
+  float: left;
   position: relative;
 }
 
@@ -229,4 +236,126 @@ li.slick-active button
 h3
 {
   font-weight: normal!important;
+}
+
+.bloco-imagens-texto 
+{
+  background-color: #eeeeee;
+  
+}
+.bloco-imagens-texto:before 
+{
+  width: 100%;
+  display: inline-block;
+  content: '';
+  height: 52px;
+  background: #ffffff;
+  background-image: url('../img/setinha.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bloco-imagens-texto:after 
+{
+  width: 100%;
+  display: inline-block;
+  content: '';
+  height: 70px;
+  background: #eeeeee;
+} 
+
+.bloco-imagens-texto strong
+{
+  text-transform: uppercase;
+  color: #96a8a7;
+}
+
+.col-4 
+{
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+.col-4 img 
+{
+cursor: pointer;
+margin: 0 auto;
+padding-top: 1em;
+vertical-align: middle;
+}
+.col-4 img:hover 
+{
+  margin-top: 10px!important;
+  position: relative!important;
+}
+
+.bloco-imagem-central
+{
+  width: 50%;
+  width: calc(50% - ( ( 4% ) * 0.5 ) );
+  margin-right: 4%;
+  margin-top: -10%;
+  margin-bottom: 20px;
+}
+
+.bloco-imagem-central img
+{
+  width: 90%;
+  height: auto;
+  margin-top: 30%;
+}
+
+.footer h3 
+{
+  text-align: left;
+}
+
+.footer 
+{
+  background-color: #2b3441;
+  color: #ffffff;
+}
+
+.footer p 
+{
+  width: 90%;
+  text-align: left;
+}
+
+
+.footer a
+{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.local:before, .emailico:before, .telefoneico:before 
+{
+  content: '';
+  width:  17px;
+  height: 24px;
+  display: inline-block;
+  float: left;
+  background-repeat: no-repeat;
+  padding-left: 5px;
+}
+.local:before {
+  background-image: url('../img/local.png');
+}  
+.emailico:before {
+  background-image: url('../img/email.png');
+}  
+.telefoneico:before {
+  background-image: url('../img/telefoneico.png');
+} 
+
+.footer-2 
+{
+  background-color: #ad5e65;
+  color: #c1c1c1;
+  height: 80px;
+}
+
+.footer-2 p
+{
+  padding: 10px;
 }
