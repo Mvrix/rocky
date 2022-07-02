@@ -1,0 +1,30 @@
+.content {
+    margin: 0 auto;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-item:nth-child(1) {
+
+    margin-top: 100px;
+}
+
+.container-item:nth-child(2) {
+    flex-direction: row-reverse;
+    margin-top: 150px;
+}
+
+.container-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-img img {
+    max-width: 490px;
+    max-height: 344px;
+}
+
+.container-text {
+    max-width: 45%;
+}
